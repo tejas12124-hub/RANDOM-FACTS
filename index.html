@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Fact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    #container {
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      max-width: 500px;
+    }
+    h1 {
+      color: #333;
+    }
+    #fact {
+      font-size: 1.2em;
+      color: #555;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Random Fact</h1>
+    <p id="fact">Loading...</p>
+    <button onclick="loadFact()">Show Another Fact</button>
+  </div>
+  <script>
+    const facts = [
+      "Honey never spoils; archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still edible.",
+      "Octopuses have three hearts, and their blood is blue due to the copper-based molecule hemocyanin.",
+      "Bananas are berries, but strawberries are not.",
+      "A group of flamingos is called a 'flamboyance.'",
+      "Sharks existed before trees; they have been around for more than 400 million years.",
+      "A day on Venus is longer than a year on Venus due to its slow rotation.",
+      "The shortest war in history was between Britain and Zanzibar on August 27, 1896. It lasted only 38 minutes.",
+      "The Eiffel Tower can grow taller by up to six inches in summer due to heat expansion.",
+      "A cloud can weigh more than a million pounds.",
+      "The heart of a blue whale is so large that a human could swim through its arteries."
+    ];
+
+    function loadFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("fact").textContent = facts[randomIndex];
+    }
+
+    window.onload = loadFact;
+  </script>
+</body>
+</html>
