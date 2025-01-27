@@ -15,7 +15,7 @@
     #container {
       margin: 50px auto;
       padding: 20px;
-      background: #ffffff;
+      background: #FFA500;
       border: 1px solid #ddd;
       border-radius: 8px;
       max-width: 500px;
