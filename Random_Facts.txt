@@ -10,12 +10,12 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f9;
+      background-color: #00ffff;
     }
     #container {
       margin: 50px auto;
       padding: 20px;
-      background: #ff5733;
+      background: #00ffff;
       border: 1px solid #ddd;
       border-radius: 8px;
       max-width: 500px;
